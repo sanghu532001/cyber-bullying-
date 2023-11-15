@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Result Page</title>
+  </head>
+  <body>
+    {% if prediction == "Hate Speech Detection" %}
+      <h2>The tweet is classified as hate speech</h2>
+    {% elif prediction == "offensive language detected" %}
+      <h2>The tweet contains offensive language</h2>
+    {% else %}
+      <h2>The tweet is not classified as hate speech or offensive language</h2>
+    {% endif %}
+  </body>
+</html>
